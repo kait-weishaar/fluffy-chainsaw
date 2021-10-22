@@ -5,6 +5,8 @@ import Cards from '../Cards';
 import Contact from '../Contact';
 import Resume from '../Resume'; // won't need this will I?
 import './App.css';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
