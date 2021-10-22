@@ -7,18 +7,22 @@ import React, { useState } from 'react';
 
   const [projects] = useState([
     {
-      "id": 1,
-      "name": "Volley-All",
-      "image": "https://github.com/kait-weishaar/Challenge-2/blob/main/assets/images/pexels-jim-de-ramos-1263426.jpg",
-      "github": "https://github.com/rrcampbell-exe/volley-all",
-      "deployment": "https://volley-all.herokuapp.com/login",
-      "description": "An application to facilitate the management of tavern-league volleyball.",
-      "technologies": "Sequelize  MVC  Javascript  RESTful API  Bootstrap"
+      id: 1,
+      name: "Volley-All",
+      image: "https://github.com/kait-weishaar/Challenge-2/blob/main/assets/images/pexels-jim-de-ramos-1263426.jpg",
+      github: "https://github.com/rrcampbell-exe/volley-all",
+      deployment: "https://volley-all.herokuapp.com/login",
+      description: "An application to facilitate the management of tavern-league volleyball.",
+      technologies: "Sequelize  MVC  Javascript  RESTful API  Bootstrap"
     },
     {
-      name: 'Pirate Advice',
-      category: 'full-stack',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      id: 2,
+      name: "Pirate Advice",
+      image: "https://github.com/kait-weishaar/Pirate-Advice/blob/main/assets/images/group1.PNG",
+      github: "https://github.com/kait-weishaar/Pirate-Advice",
+      deployment: "https://kait-weishaar.github.io/Pirate-Advice/",
+      description: "An application to share advice from pirates.",
+      technologies: "Third Party APIS  MVC  Javascript  Bulma  CSS,HTML"
     },
     {
       name: 'Horiseon',
@@ -26,9 +30,13 @@ import React, { useState } from 'react';
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
     },
     {
-      name: 'Run-Buddy',
-      category: 'front-end',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+      id: 4,
+      name: "Run-Buddy",
+      image: "https://github.com/kait-weishaar/Pirate-Advice/blob/main/assets/images/group1.PNG",
+      github: "https://github.com/kait-weishaar/run-buddy",
+      deployment: "https://kait-weishaar.github.io/run-buddy/",
+      description: "An application to find a running buddy.",
+      technologies: "Third Party APIS  MVC  Javascript  Bulma  CSS,HTML",
     }
   ]);
 
