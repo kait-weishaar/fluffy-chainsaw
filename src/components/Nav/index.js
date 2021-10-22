@@ -24,6 +24,20 @@ function Nav(props) {
           </li> */}
 
           {/* Can I map over the sections of the page to create their li's */}
+
+          {sections.map(section => (
+             <li className="nav-item" key={section}>
+             <a
+               href={'#' + section.toLowerCase()}
+               onClick={() => props.handlePageChange(section)}
+               className={
+                 props.currentPage === section ? 'nav-link active' : 'nav-link'
+               }
+             >
+               {section}
+             </a>
+           </li>
+          ))}
           <li className="mx-2">
             <a data-testid="resume" href="../../src/assets/Weishaar_Resume_2021.pdf" download="Weishaar-Resume" onClick={() => setContactSelected(false)}>
               Resume 
