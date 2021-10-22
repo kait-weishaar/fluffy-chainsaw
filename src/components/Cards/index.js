@@ -50,7 +50,7 @@ import React, { useState } from 'react';
   //   setCurrentPhoto({ ...image, index: i });
   //   setIsModalOpen(!isModalOpen);
   // };
-  const Card = () => {
+  const Card = (props) => {
     return (
       <div className="card"> 
           <div className="img-container">

@@ -1,15 +1,16 @@
-import logo from './logo.svg';
-import Nav from '../Nav';
-import About from '../About';
-import Cards from '../Cards';
-import Contact from '../Contact';
-import Resume from '../Resume'; // won't need this will I?
+import React, { useState } from 'react';
+
+import Nav from './components/Nav';
+import About from './components/About';
+import Cards from './components/Cards';
+import Contact from './components/Contact';
+
 import './App.css';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap';
 
 function App() {
-
+  const [currentPage, handlePageChange] = useState('About');
   const displayPage = () => {
     switch(currentPage) {
       case "about": 
