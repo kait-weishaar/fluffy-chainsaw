@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import {Link} from 'react-router-dom'
 function Nav(props) {
-  const sections = ['About', 'Portfolio', 'Contact'];
+  // const sections = ['About', 'Portfolio', 'Contact'];
 
   // useEffect(() => {
   //   document.title = capitalizeFirstLetter(currentCategory.name);

@@ -1,6 +1,8 @@
 import React from 'react';
-import coverImage from '../../assets/cover/cover-image.jpg';
+// import coverImage from '../../assets/cover/cover-image.jpg';
 import Card from 'react-bootstrap/Card';
+import ListGroupItem from 'react-bootstrap/ListGroupItem';
+import ListGroup from 'react-bootstrap/ListGroup';
 // import Button from 'react-bootstrap/Button'
 function About() {
   return (
@@ -18,7 +20,7 @@ function About() {
 
         
 
-    <section className="my-5">
+    
       <Card style={{ width: '40rem' }}>
       <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
       <Card.Body>
@@ -39,7 +41,7 @@ function About() {
         <Card.Link href="#">Github</Card.Link>
       </Card.Body>
     </Card>
-    </section> 
+    
   );
 }
 
