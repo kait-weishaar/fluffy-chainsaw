@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Cards from './components/Cards';
@@ -12,6 +12,8 @@ import 'react-bootstrap';
 function App() {
   const [currentPage, handlePageChange] = useState('About');
   const displayPage = () => {
+    
+    //switch case for conditional rendering
     switch(currentPage) {
       case "about": 
       return <About></About>

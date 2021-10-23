@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-
+import React from 'react';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 // const ProjectList = ({ category }) => {
 //   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -50,32 +52,56 @@ import React, { useState } from 'react';
   //   setCurrentPhoto({ ...image, index: i });
   //   setIsModalOpen(!isModalOpen);
   // };
-  const Card = (props) => {
+  const Cards = (props) => {
     return (
-      <div className="card"> 
-          <div className="img-container">
-            <img alt={props.name} src={props.image}/>
-          </div>
-          <div className="content">
-            <ul>
-              <li>
-                <p className="project-title">{props.name}</p>
-              </li>
-              <li>
-              <p className="project-description">{props.description}</p>
-              </li>
-              <li>
-                <div className="project-icons">
-                <a href={props.github}><img src="https://img.icons8.com/windows/32/000000/github.png"/></a> 
-                <a href={props.deployment}><img src="https://img.icons8.com/windows/32/000000/application-window.png" alt="app-icon" id="port-icon"/></a> 
-                </div>
-              </li>
-              <li>
-              {props.technologies}
-              </li>
-            </ul>
-          </div>
-        </div>
+      <Row xs={1} md={2} className="g-4">
+            {/* {Array.from({ length: 4 }).map((_, idx) => ( */}
+              <Col>
+                <Card>
+                  <Card.Img variant="top" src={props.image} />
+                  <Card.ImgOverlay>
+                        <Card.Body>
+                          <Card.Title className="project-title">{props.name}</Card.Title>
+                          <Card.Text className="project-description">
+                              {props.description}
+                          </Card.Text>
+                              <br></br>
+                          <Card.Text className="project-technologies">
+                              {props.technologies}
+                          </Card.Text>    
+                          <Card.Link href="#">Deployment</Card.Link>
+                          <Card.Link href="#">Github</Card.Link>
+                        </Card.Body>
+                  </Card.ImgOverlay>
+                </Card>
+              </Col>
+            ))
+      </Row>
+
+      // <Card className="card"> 
+      //     <div className="img-container">
+      //       <img alt={props.name} src={props.image}/>
+      //     </div>
+      //     <div className="content">
+      //       <ul>
+      //         <li>
+      //           <p className="project-title">{props.name}</p>
+      //         </li>
+      //         <li>
+      //         <p className="project-description">{props.description}</p>
+      //         </li>
+      //         <li>
+      //           <div className="project-icons">
+      //           <a href={props.github}><img src="https://img.icons8.com/windows/32/000000/github.png"/></a> 
+      //           <a href={props.deployment}><img src="https://img.icons8.com/windows/32/000000/application-window.png" alt="app-icon" id="port-icon"/></a> 
+      //           </div>
+      //         </li>
+      //         <li>
+      //         {props.technologies}
+      //         </li>
+      //       </ul>
+      //     </div>
+      //   </Card>
       );
   
   }
@@ -89,12 +115,12 @@ function Projects () {
     return (
     <>
     <div className="project">
-    <h1 className="title">full stack projects</h1>
+    <h1 className="title">Web Development Projects</h1>
     </div>
 
       <Wrapper>
         {projects.map((project) => (
-          <Card 
+          <Cards 
           name={project.name}
           key={project.id}
           image={project.image}
