@@ -1,27 +1,68 @@
-import React, { useEffect } from 'react';
-// import { capitalizeFirstLetter } from '../../utils/helpers';
-import Navbar from 'react-bootstrap/Navbar';
-
-import Container from 'react-bootstrap/Container';
+//import React from 'react'; !!!!not rendering with react...
+// import Navbar from 'react-bootstrap/Navbar';
+// import Container from 'react-bootstrap/Container';
+import {CNavItem, CContainer, CCollapse, CNavbarNav, CNavbarToggler, CNavbarBrand, CNavbar} from '@coreui/react';
 import {Link} from 'react-router-dom'
-function Nav(props) {
-  // const sections = ['About', 'Portfolio', 'Contact'];
 
-  // useEffect(() => {
-  //   document.title = capitalizeFirstLetter(currentCategory.name);
-  // }, [currentCategory]);
+
+
+function Nav() {
+  
 
   return (
-    <Navbar bg="dark" variant="dark">
-    <Container>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Item><Link to="/" active>About</Link></Nav.Item>
-      <Nav.Item><Link to="/portfolio" active>Portfolio</Link></Nav.Item>
-      <Nav.Item><Link to="/contact" active>Contact</Link></Nav.Item>
-    </Nav>
-    </Container>
-  </Navbar>
+  
+  <>
+  <CNavbar expand="lg" colorScheme="light" className="bg-light">
+    <CContainer fluid>
+      <CNavbarBrand href="#">Kait Weishaar</CNavbarBrand>
+      <CNavbarToggler
+        aria-label="Toggle navigation"
+        aria-expanded={visible}
+        onClick={() => setVisible(!visible)}
+      />
+      <CCollapse className="navbar-collapse" visible={visible}>
+        <CNavbarNav>
+          <CNavItem>
+            <Link to="/" active>
+              About
+            </Link>
+          </CNavItem>
+          <CNavItem>
+            <Link to="/portfolio">Features</Link>
+          </CNavItem>
+          <CNavItem>
+            <Link to="/contact">Contact</Link>
+          </CNavItem>
+          <CNavItem>
+                <a data-testid="resume" href="../../src/assets/Weishaar_Resume_2021.pdf" download="Weishaar-Resume" >
+                  Resume 
+                </a>
+          </CNavItem>
+        </CNavbarNav>
+      </CCollapse>
+    </CContainer>
+  </CNavbar>
+</>
+);
+  
+}
+export default Nav;
+
+
+
+//   <Navbar bg="dark" variant="dark">
+  //       <Container>
+  //           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+  //           <Nav className="me-auto">
+  //             <Nav.Item><Link to="/" active>About</Link></Nav.Item>
+  //             <Nav.Item><Link to="/portfolio" active>Portfolio</Link></Nav.Item>
+  //             <Nav.Item><Link to="/contact" active>Contact</Link></Nav.Item>
+  //           </Nav>
+  //       </Container>
+  // </Navbar>
+
+
+
 
     // <header className="flex-row px-1">
     //   <h2>
@@ -71,7 +112,5 @@ function Nav(props) {
     //     </ul>
     //   </nav>
     // </header>
-  );
-}
 
-export default Nav;
+

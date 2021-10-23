@@ -1,14 +1,24 @@
 import React from 'react';
+import {CFooter, CLink} from '@coreui/react';
+
 
 const Footer = () => {
     return(
-        <footer className = "flex-row justify-space-around">
-            <ul className = "flex-row no-bullets align-center">
-                <li className = "mr-35">Find me on <a href = "https://github.com/kait-weishaar" target = "_blank" rel="noreferrer" className = "info-link">GitHub<img src="https://img.icons8.com/ios/80/000000/github.png" alt="github-logo" class="icon"/></a></li>
-                <li className = "mr-35">Connect on <a href = "www.linkedin.com/in/kaitlin-weishaar-880995178" target = "_blank" rel = "noreferrer" className = "info-link">LinkedIn<img src="https://img.icons8.com/fluent/80/000000/linkedin-circled.png" alt="linkedin-logo" class="icon"/></a></li>
-                <li>Reach out via <a href = "mailto:kweishaar@hawk.iit.edu" target = "_blank" rel="noreferrer" className = "info-link">email</a></li>
-            </ul>
-        </footer>
+        <CFooter>
+        <div className="image" name="Links">
+                <a href="https://github.com/kait-weishaar"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"/></a>
+                <a href="www.linkedin.com/in/kaitlin-weishaar-880995178"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"/></a>
+                <a href="https://www.instagram.com/kaitweishaar/"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v2.png"/></a>
+        </div>
+        <div>
+            <CLink href="https://coreui.io">CoreUI</CLink>
+            <span>&copy; 2021 creativeLabs.</span>
+        </div>
+        <div>
+            <span>Powered by </span>
+            <CLink href="https://coreui.io">CoreUI</CLink>
+        </div>
+    </CFooter>
     );
 }
 

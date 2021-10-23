@@ -32,7 +32,7 @@ function App() {
                 <div>
                     <Switch>
                         <Route
-                            exact path="/#/"
+                            exact path="/"
                             component={ About }
                         ></Route>
                         <Route
