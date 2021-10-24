@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-// import PhotoList from '../PhotoList';
-// import { capitalizeFirstLetter } from '../../utils/helpers';
 import { CHeader,CContainer, CHeaderBrand, CHeaderToggler, CCollapse,} from '@coreui/react';
 
 

@@ -1,9 +1,4 @@
 import React from 'react';
-// import coverImage from '../../assets/cover/cover-image.jpg';
-// import Card from 'react-bootstrap/Card';
-// import ListGroupItem from 'react-bootstrap/ListGroupItem';
-// import ListGroup from 'react-bootstrap/ListGroup';
-// import Button from 'react-bootstrap/Button'
 import { CCard, CCardImage, CCardBody, CCardTitle, CCardText, CCol, CCardLink, CCardSubtitle} from '@coreui/react';
 
 
