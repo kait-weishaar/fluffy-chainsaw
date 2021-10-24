@@ -2,6 +2,8 @@ main {
   margin: 0 auto;
   max-width: 90%;
   padding: 50px 30px;
+  background-image: url('https://github.com/kait-weishaar/fluffy-chainsaw/blob/main/src/assets/hero.jpg?raw=true');
+  background-size: cover;
 }
 :root {
   --primary: #8c54ff;
@@ -15,4 +17,5 @@ main {
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 }
+
 
