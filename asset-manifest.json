@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fluffy-chainsaw/static/css/main.4d3b83f2.chunk.css",
+    "main.js": "/fluffy-chainsaw/static/js/main.fc974ac5.chunk.js",
+    "main.js.map": "/fluffy-chainsaw/static/js/main.fc974ac5.chunk.js.map",
+    "runtime-main.js": "/fluffy-chainsaw/static/js/runtime-main.4e1c2ccf.js",
+    "runtime-main.js.map": "/fluffy-chainsaw/static/js/runtime-main.4e1c2ccf.js.map",
+    "static/css/2.76d5257a.chunk.css": "/fluffy-chainsaw/static/css/2.76d5257a.chunk.css",
+    "static/js/2.06fe762a.chunk.js": "/fluffy-chainsaw/static/js/2.06fe762a.chunk.js",
+    "static/js/2.06fe762a.chunk.js.map": "/fluffy-chainsaw/static/js/2.06fe762a.chunk.js.map",
+    "static/js/3.cb06d598.chunk.js": "/fluffy-chainsaw/static/js/3.cb06d598.chunk.js",
+    "static/js/3.cb06d598.chunk.js.map": "/fluffy-chainsaw/static/js/3.cb06d598.chunk.js.map",
+    "index.html": "/fluffy-chainsaw/index.html",
+    "static/css/2.76d5257a.chunk.css.map": "/fluffy-chainsaw/static/css/2.76d5257a.chunk.css.map",
+    "static/css/main.4d3b83f2.chunk.css.map": "/fluffy-chainsaw/static/css/main.4d3b83f2.chunk.css.map",
+    "static/js/2.06fe762a.chunk.js.LICENSE.txt": "/fluffy-chainsaw/static/js/2.06fe762a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e1c2ccf.js",
+    "static/css/2.76d5257a.chunk.css",
+    "static/js/2.06fe762a.chunk.js",
+    "static/css/main.4d3b83f2.chunk.css",
+    "static/js/main.fc974ac5.chunk.js"
+  ]
+}
