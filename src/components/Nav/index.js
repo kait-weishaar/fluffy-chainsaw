@@ -12,8 +12,8 @@ function Nav() {
   return (
   
   <>
-  <CNavbar expand="lg" colorScheme="light" className="bg-light">
-    <CContainer fluid>
+  <CNavbar expand="lg" colorScheme="light" className="bg-light" className="nav-tabs nav-fill">
+    <CContainer fluid className="space-between">
       <CNavbarBrand href="#">Kait Weishaar</CNavbarBrand>
       <CNavbarToggler
         aria-label="Toggle navigation"
@@ -21,20 +21,20 @@ function Nav() {
         onClick={() => setVisible(!visible)}
       />
       <CCollapse className="navbar-collapse" visible={visible}>
-        <CNavbarNav>
-          <CNavItem>
-            <Link to="/" active>
+        <CNavbarNav className="nav-tabs nav-fill">
+          <CNavItem >
+            <Link to="/" active >
               About
             </Link>
           </CNavItem>
-          <CNavItem>
-            <Link to="/portfolio">Portfolio</Link>
+          <CNavItem >
+            <Link to="/portfolio" active>Portfolio</Link>
           </CNavItem>
-          <CNavItem>
-            <Link to="/contact">Contact</Link>
+          <CNavItem >
+            <Link to="/contact" active>Contact</Link>
           </CNavItem>
-          <CNavItem>
-                <a data-testid="resume" href="../../src/assets/Weishaar_Resume_2021.pdf" download="Weishaar-Resume" >
+          <CNavItem >
+                <a data-testid="resume" href="./Weishaar_Resume_2021.pdf" download="Weishaar-Resume" active>
                   Resume 
                 </a>
           </CNavItem>

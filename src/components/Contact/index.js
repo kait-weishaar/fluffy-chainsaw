@@ -44,15 +44,15 @@ function ContactForm() {
                 <h2>Send me a message!</h2>
                 <div className="mb-3">
                   <CFormLabel htmlFor="exampleFormControlInput1">Name</CFormLabel>
-                  <CFormInput type="text" id="exampleFormControlInput1" placeholder="John Doe" defaultValue={ name } onBlur={ handleChange }/>
+                  <CFormInput type="text" id="exampleFormControlInput1" name='Name' placeholder="John Doe" defaultValue={ name } onBlur={ handleChange }/>
                 </div>
                 <div className="mb-3">
                   <CFormLabel htmlFor="exampleFormControlInput2">Email address</CFormLabel>
-                  <CFormInput type="email" id="exampleFormControlInput1" placeholder="name@example.com" defaultValue={ email } onBlur={ handleChange }/>
+                  <CFormInput type="email" id="exampleFormControlInput1" name='Email' placeholder="name@example.com" defaultValue={ email } onBlur={ handleChange }/>
                 </div>
                 <div className="mb-3">
                   <CFormLabel htmlFor="exampleFormControlTextarea1">Message</CFormLabel>
-                  <CFormTextarea id="exampleFormControlTextarea1" placeholder="Your message" rows="3" defaultValue={ message } onBlur={ handleChange }></CFormTextarea>
+                  <CFormTextarea id="exampleFormControlTextarea1" name='Message' placeholder="Your message" rows="3" defaultValue={ message } onBlur={ handleChange }></CFormTextarea>
                 </div>
                 { errorMessage && (
                           <div>

@@ -31,7 +31,7 @@ function App() {
     <Router basename={process.env.PUBLIC_URL}>
             <Nav />
             <main className="body">
-                <div>
+                <div className="row justify-content-center">
                     <Switch>
                         <Route exact path="/"component={ About }></Route>
                         <Route exact path="/portfolio"component={ Cards }></Route>

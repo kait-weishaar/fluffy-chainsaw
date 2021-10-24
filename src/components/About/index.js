@@ -9,14 +9,14 @@ import { CCard, CCardImage, CCardBody, CCardTitle, CCardText} from '@coreui/reac
 function About() {
   return (
   
-    <CCard className="w-50">
-    <div className="">
+    <CCard className="w-50 about">
+    
         <CCardTitle>
             <div className="section-title secondary-border">
                 About Kait
             </div>
         </CCardTitle>
-        <CCardImage orientation="top" src="https://github.com/kait-weishaar/Challenge-2/blob/main/assets/images/crop2.jpg?raw=true" />
+        <CCardImage orientation="top" src="https://github.com/kait-weishaar/fluffy-chainsaw/blob/portfolio/src/assets/cropbetter.jpg?raw=true" />
         <CCardBody>
             <CCardText>
                 <p className="flex-row">
@@ -25,7 +25,7 @@ function About() {
                 </p>
             </CCardText>
         </CCardBody>
-    </div>
+    
 </CCard>
     
   );
