@@ -1,34 +1,32 @@
 import React from 'react';
 // import coverImage from '../../assets/cover/cover-image.jpg';
-import Card from 'react-bootstrap/Card';
-import ListGroupItem from 'react-bootstrap/ListGroupItem';
-import ListGroup from 'react-bootstrap/ListGroup';
+// import Card from 'react-bootstrap/Card';
+// import ListGroupItem from 'react-bootstrap/ListGroupItem';
+// import ListGroup from 'react-bootstrap/ListGroup';
 // import Button from 'react-bootstrap/Button'
+import { CCard, CCardImage, CCardBody, CCardTitle, CCardText} from '@coreui/react';
+
 function About() {
   return (
   
-      <Card style={{ width: '40rem' }}>
-        <Card.ImgOverlay>
-              <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-              <Card.Body>
-                <Card.Title>Kait Weishaar</Card.Title>
-                <Card.Text>
-                I'm a full stack web developer and designer, with a background in Architecture and Engineering.
-                I have a Bachelor's of Architecture and a Master's in Structural Engineering, which have helped
-                hone my design thinking and critical problem solving skills.
-                </Card.Text>
-              </Card.Body>
-              <ListGroup className="list-group-flush">
-                <ListGroupItem>Full Stack Developer</ListGroupItem>
-                <ListGroupItem>MERN Stack</ListGroupItem>
-                <ListGroupItem>Masters of Engineering</ListGroupItem>
-              </ListGroup>
-              <Card.Body>
-                <Card.Link href="#">Deployment</Card.Link>
-                <Card.Link href="#">Github</Card.Link>
-              </Card.Body>
-        </Card.ImgOverlay>
-    </Card>
+    <CCard>
+    <div className="">
+        <CCardTitle>
+            <div className="section-title secondary-border">
+                About Kait
+            </div>
+        </CCardTitle>
+        <CCardImage orientation="top" src="../crop2.jpg" />
+        <CCardBody>
+            <CCardText>
+                <p className="flex-row">
+                I'm a full stack web developer and designer currently based out of Chicago, with a background in Architecture and Engineering.
+                I have a Bachelor's of Architecture and a Master's in Structural Engineering, which have helped hone my design thinking and critical problem solving skills.
+                </p>
+            </CCardText>
+        </CCardBody>
+    </div>
+</CCard>
     
   );
 }

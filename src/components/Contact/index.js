@@ -52,7 +52,7 @@ function ContactForm() {
                 </div>
                 <div className="mb-3">
                   <CFormLabel htmlFor="exampleFormControlTextarea1">Message</CFormLabel>
-                  <CFormTextarea id="exampleFormControlTextarea1" placeholder="Your message" rows="5" defaultValue={ message } onBlur={ handleChange }></CFormTextarea>
+                  <CFormTextarea id="exampleFormControlTextarea1" placeholder="Your message" rows="3" defaultValue={ message } onBlur={ handleChange }></CFormTextarea>
                 </div>
                 { errorMessage && (
                           <div>
