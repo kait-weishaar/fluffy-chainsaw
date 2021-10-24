@@ -26,7 +26,8 @@ function App() {
     //   default:
     //     return <About></About>
     
-  //https://reactrouter.com/web/guides/quick-start
+  //https://reactrouter.com/web/guides/quick-start    using react router
+  //https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/ react router, gh-pages
   return (
     <Router basename={process.env.PUBLIC_URL}>
             <Nav />
