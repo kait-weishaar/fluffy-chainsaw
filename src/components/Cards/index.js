@@ -42,6 +42,24 @@ const projects = [
     deployment: "https://kait-weishaar.github.io/run-buddy/",
     description: "An application to find a personal trainer.",
     technologies: "Front End  Javascript  CSS,HTML",
+  },
+  {
+    id: 5,
+    name: "Weather-App",
+    image: "https://github.com/kait-weishaar/Weather-App/blob/main/assets/Capture.PNG?raw=true",
+    github: "https://github.com/kait-weishaar/Weather-App",
+    deployment: "https://kait-weishaar.github.io/Weather-App/",
+    description: "An application to check the weather by city",
+    technologies: "Third-Pary APIs  Javascript  CSS,HTML",
+  },
+  {
+    id: 6,
+    name: "Budget-Tracker",
+    image: "https://github.com/kait-weishaar/furry-guide/blob/main/walkthrough.gif?raw=true",
+    github: "https://github.com/kait-weishaar/furry-guide",
+    deployment: "https://dry-shore-08980.herokuapp.com/",
+    description: "An application to track personal finances",
+    technologies: "Back End MongoDB Javascript  CSS,HTML",
   }
 ];
 
@@ -52,11 +70,12 @@ function Wrapper(props) {return <div className="wrapper">{props.children}</div>;
    
     return (
 
-      <CRow xs={{ cols: 1, gutter: 0.5 }} md={{ cols: 1 }} className="justify-content-center">
+      // <CRow xs={{ cols: 2, gutter: 0.5 }} md={{ cols: 2 }} className="container justify-content-center">
              
 
 
-       <Wrapper>
+       <Wrapper className='row row-cols-2 row-cols-md-2'>
+       <CRow xs={{ cols: 2, gutter: 0.5 }} md={{ cols: 2 }} className="container justify-content-center">
          {projects.map((project) => (
            <Project 
            name={project.name}
@@ -67,9 +86,10 @@ function Wrapper(props) {return <div className="wrapper">{props.children}</div>;
            description={project.description}
            />
          ))}
+         </CRow>
        </Wrapper>
                 
-          </CRow>
+          
      
       );
   

@@ -9,7 +9,7 @@ import { CCard, CCardImage, CCardBody, CCardTitle, CCardText, CCol, CCardLink, C
 
 const Project = (props) => {
     return(
-<CCol xs>
+                        <CCol xs className="col">
                           <CCard className="w-50">
                             <CCardImage orientation="top" src={props.image} />
                             <CCardBody>
