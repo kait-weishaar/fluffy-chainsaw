@@ -1,5 +1,5 @@
-//import React from 'react'; !!!!not rendering with react...
-// import Navbar from 'react-bootstrap/Navbar';
+import React, {useState} from 'react'; 
+// import Navbar from 'react-bootstrap/Navbar';!!!!not rendering with react...
 // import Container from 'react-bootstrap/Container';
 import {CNavItem, CContainer, CCollapse, CNavbarNav, CNavbarToggler, CNavbarBrand, CNavbar} from '@coreui/react';
 import {Link} from 'react-router-dom'
@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 
 function Nav() {
   
-
+  const [visible, setVisible] = useState(false)
   return (
   
   <>
@@ -28,7 +28,7 @@ function Nav() {
             </Link>
           </CNavItem>
           <CNavItem>
-            <Link to="/portfolio">Features</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </CNavItem>
           <CNavItem>
             <Link to="/contact">Contact</Link>

@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import './index.css';
 import 'react-bootstrap';
+import '@coreui/coreui/dist/css/coreui.min.css'
 
 function App() {
   // const [currentPage, handlePageChange] = useState('About');
